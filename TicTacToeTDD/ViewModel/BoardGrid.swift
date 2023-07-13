@@ -32,7 +32,6 @@ class BoardGrid {
         print(grid)
     }
 
-
     func isCellEmpty(position: Position) -> Bool {
         return grid[position.row][position.column].player  == .none
     }

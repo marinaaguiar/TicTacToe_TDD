@@ -12,13 +12,16 @@
 		9C9A16872A5DAA0C009B55D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9A16862A5DAA0C009B55D4 /* Assets.xcassets */; };
 		9C9A168A2A5DAA0C009B55D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9A16892A5DAA0C009B55D4 /* Preview Assets.xcassets */; };
 		9C9A16912A5DAA1A009B55D4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16902A5DAA1A009B55D4 /* Game.swift */; };
-		9C9A16992A5DAA42009B55D4 /* TicTacToeTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16982A5DAA42009B55D4 /* TicTacToeTDDTests.swift */; };
+		9C9A16992A5DAA42009B55D4 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16982A5DAA42009B55D4 /* GameTests.swift */; };
 		9C9A16A12A5DAAC3009B55D4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16A02A5DAAC3009B55D4 /* Player.swift */; };
 		9C9A16A32A5DAACB009B55D4 /* BoardGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16A22A5DAACB009B55D4 /* BoardGrid.swift */; };
 		9C9A16A52A5DAD20009B55D4 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16A42A5DAD20009B55D4 /* Move.swift */; };
 		9C9A16A72A5DB686009B55D4 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16A62A5DB686009B55D4 /* Turn.swift */; };
 		9C9A16A92A5DC133009B55D4 /* BoardGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16A82A5DC133009B55D4 /* BoardGridTests.swift */; };
 		9C9A16AB2A5DC2FE009B55D4 /* TurnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16AA2A5DC2FE009B55D4 /* TurnTests.swift */; };
+		9C9A16AD2A5DCEFC009B55D4 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16AC2A5DCEFC009B55D4 /* GameState.swift */; };
+		9C9A16AF2A5DD311009B55D4 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16AE2A5DD311009B55D4 /* Rules.swift */; };
+		9C9A16B12A5DD975009B55D4 /* RulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A16B02A5DD975009B55D4 /* RulesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +42,16 @@
 		9C9A16892A5DAA0C009B55D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C9A16902A5DAA1A009B55D4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		9C9A16962A5DAA41009B55D4 /* TicTacToeTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C9A16982A5DAA42009B55D4 /* TicTacToeTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTDDTests.swift; sourceTree = "<group>"; };
+		9C9A16982A5DAA42009B55D4 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		9C9A16A02A5DAAC3009B55D4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		9C9A16A22A5DAACB009B55D4 /* BoardGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGrid.swift; sourceTree = "<group>"; };
 		9C9A16A42A5DAD20009B55D4 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		9C9A16A62A5DB686009B55D4 /* Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
 		9C9A16A82A5DC133009B55D4 /* BoardGridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGridTests.swift; sourceTree = "<group>"; };
 		9C9A16AA2A5DC2FE009B55D4 /* TurnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnTests.swift; sourceTree = "<group>"; };
+		9C9A16AC2A5DCEFC009B55D4 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		9C9A16AE2A5DD311009B55D4 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		9C9A16B02A5DD975009B55D4 /* RulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +113,10 @@
 		9C9A16972A5DAA42009B55D4 /* TicTacToeTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C9A16982A5DAA42009B55D4 /* TicTacToeTDDTests.swift */,
+				9C9A16982A5DAA42009B55D4 /* GameTests.swift */,
 				9C9A16A82A5DC133009B55D4 /* BoardGridTests.swift */,
 				9C9A16AA2A5DC2FE009B55D4 /* TurnTests.swift */,
+				9C9A16B02A5DD975009B55D4 /* RulesTests.swift */,
 			);
 			path = TicTacToeTDDTests;
 			sourceTree = "<group>";
@@ -118,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				9C9A16902A5DAA1A009B55D4 /* Game.swift */,
+				9C9A16AC2A5DCEFC009B55D4 /* GameState.swift */,
+				9C9A16AE2A5DD311009B55D4 /* Rules.swift */,
 				9C9A16A22A5DAACB009B55D4 /* BoardGrid.swift */,
 				9C9A16A02A5DAAC3009B55D4 /* Player.swift */,
 				9C9A16A62A5DB686009B55D4 /* Turn.swift */,
@@ -229,8 +238,10 @@
 				9C9A16A12A5DAAC3009B55D4 /* Player.swift in Sources */,
 				9C9A16852A5DAA0B009B55D4 /* ContentView.swift in Sources */,
 				9C9A16A32A5DAACB009B55D4 /* BoardGrid.swift in Sources */,
+				9C9A16AF2A5DD311009B55D4 /* Rules.swift in Sources */,
 				9C9A16912A5DAA1A009B55D4 /* Game.swift in Sources */,
 				9C9A16A52A5DAD20009B55D4 /* Move.swift in Sources */,
+				9C9A16AD2A5DCEFC009B55D4 /* GameState.swift in Sources */,
 				9C9A16832A5DAA0B009B55D4 /* TicTacToeTDDApp.swift in Sources */,
 				9C9A16A72A5DB686009B55D4 /* Turn.swift in Sources */,
 			);
@@ -241,8 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9A16AB2A5DC2FE009B55D4 /* TurnTests.swift in Sources */,
+				9C9A16B12A5DD975009B55D4 /* RulesTests.swift in Sources */,
 				9C9A16A92A5DC133009B55D4 /* BoardGridTests.swift in Sources */,
-				9C9A16992A5DAA42009B55D4 /* TicTacToeTDDTests.swift in Sources */,
+				9C9A16992A5DAA42009B55D4 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
