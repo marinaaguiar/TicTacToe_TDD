@@ -31,6 +31,14 @@ struct Rules {
             return .playerWin(player)
         }
 
+        if hasRightDiagonalFilled(player: player) {
+            return .playerWin(player)
+        }
+
+        if hasLeftDiagonalFilled(player: player) {
+            return .playerWin(player)
+        }
+
         return .idle
     }
 
@@ -52,7 +60,36 @@ struct Rules {
         return winnerColumn.count == boardGrid.numberOfColumns
     }
 
-    func isBoardGridFilled() -> Bool {
+    private func hasRightDiagonalFilled(player: Player) -> Bool {
+        var winnerDiagonal: [Move] = []
+        for row in 0..<boardGrid.numberOfRows {
+            for col in 0..<boardGrid.numberOfColumns {
+                if row == col {
+                    let cell = boardGrid.grid[row][col]
+                    if cell.player == player {
+                        winnerDiagonal.append(cell)
+                    }
+                }
+            }
+        }
+        return winnerDiagonal.count == boardGrid.numberOfColumns
+    }
+
+    private func hasLeftDiagonalFilled(player: Player) -> Bool {
+        var winnerDiagonal: [Move] = []
+        var col = 2
+
+        for row in 0..<boardGrid.numberOfRows {
+            let cell = boardGrid.grid[row][col]
+            if cell.player == player {
+                winnerDiagonal.append(cell)
+            }
+            col -= 1
+        }
+        return winnerDiagonal.count == boardGrid.numberOfColumns
+    }
+
+    private func isBoardGridFilled() -> Bool {
         let flatGrid = boardGrid.grid.flatMap({ $0 })
         return flatGrid.allSatisfy({ $0.player != .none})
     }

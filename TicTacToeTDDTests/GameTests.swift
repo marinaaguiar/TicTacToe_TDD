@@ -117,8 +117,77 @@ final class GameTests: XCTestCase {
         XCTAssertEqual(GameState.playerWin(.playerO), game.currentGameState)
     }
 
+    func testGameStateWhenPlayerXWinsOnRightDiagonal() {
+        let currentPlayer = game.currentPlayer
 
+        let move1 = Move(position: Position(row: 0, column: 0), player: currentPlayer)
+        game.playMove(at: move1.position)
+        let move2 = Move(position: Position(row: 0, column: 2), player: currentPlayer)
+        game.playMove(at: move2.position)
+        let move3 = Move(position: Position(row: 1, column: 1), player: currentPlayer)
+        game.playMove(at: move3.position)
+        let move4 = Move(position: Position(row: 1, column: 2), player: currentPlayer)
+        game.playMove(at: move4.position)
+        let move5 = Move(position: Position(row: 2, column: 2), player: currentPlayer)
+        game.playMove(at: move5.position)
 
+        XCTAssertEqual(GameState.playerWin(.playerX), game.currentGameState)
+    }
+
+    func testGameStateWhenPlayerOWinsOnRightDiagonal() {
+        let currentPlayer = game.currentPlayer
+
+        let move1 = Move(position: Position(row: 1, column: 2), player: currentPlayer)
+        game.playMove(at: move1.position)
+        let move2 = Move(position: Position(row: 0, column: 0), player: currentPlayer)
+        game.playMove(at: move2.position)
+        let move3 = Move(position: Position(row: 2, column: 0), player: currentPlayer)
+        game.playMove(at: move3.position)
+        let move4 = Move(position: Position(row: 1, column: 1), player: currentPlayer)
+        game.playMove(at: move4.position)
+        let move5 = Move(position: Position(row: 1, column: 0), player: currentPlayer)
+        game.playMove(at: move5.position)
+        let move6 = Move(position: Position(row: 2, column: 2), player: currentPlayer)
+        game.playMove(at: move6.position)
+
+        XCTAssertEqual(GameState.playerWin(.playerO), game.currentGameState)
+    }
+
+    func testGameStateWhenPlayerXWinsOnLeftDiagonal() {
+        let currentPlayer = game.currentPlayer
+
+        let move1 = Move(position: Position(row: 0, column: 2), player: currentPlayer)
+        game.playMove(at: move1.position)
+        let move2 = Move(position: Position(row: 2, column: 2), player: currentPlayer)
+        game.playMove(at: move2.position)
+        let move3 = Move(position: Position(row: 1, column: 1), player: currentPlayer)
+        game.playMove(at: move3.position)
+        let move4 = Move(position: Position(row: 1, column: 2), player: currentPlayer)
+        game.playMove(at: move4.position)
+        let move5 = Move(position: Position(row: 2, column: 0), player: currentPlayer)
+        game.playMove(at: move5.position)
+
+        XCTAssertEqual(GameState.playerWin(.playerX), game.currentGameState)
+    }
+
+    func testGameStateWhenPlayerOWinsOnLeftDiagonal() {
+        let currentPlayer = game.currentPlayer
+
+        let move1 = Move(position: Position(row: 1, column: 2), player: currentPlayer)
+        game.playMove(at: move1.position)
+        let move2 = Move(position: Position(row: 0, column: 2), player: currentPlayer)
+        game.playMove(at: move2.position)
+        let move3 = Move(position: Position(row: 2, column: 2), player: currentPlayer)
+        game.playMove(at: move3.position)
+        let move4 = Move(position: Position(row: 1, column: 1), player: currentPlayer)
+        game.playMove(at: move4.position)
+        let move5 = Move(position: Position(row: 1, column: 0), player: currentPlayer)
+        game.playMove(at: move5.position)
+        let move6 = Move(position: Position(row: 2, column: 0), player: currentPlayer)
+        game.playMove(at: move6.position)
+
+        XCTAssertEqual(GameState.playerWin(.playerO), game.currentGameState)
+    }
 }
 
 
