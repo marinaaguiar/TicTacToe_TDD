@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TicTacToeTDDApp: App {
+//    @State private var viewModel: Game = Game(boardGrid: BoardGrid())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TicTacToeView()
         }
     }
 }

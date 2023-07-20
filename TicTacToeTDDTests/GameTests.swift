@@ -33,10 +33,10 @@ final class GameTests: XCTestCase {
 
     func testCheckIfCellUpdatesAfterPlayMove() {
         let position = Position(row: 0, column: 0)
-        let boardGrid = game.boardGrid
+        let grid = game.grid
         game.playMove(at: position)
 
-        XCTAssertNotEqual(Player.none, boardGrid.grid[position.row][position.column].player)
+        XCTAssertNotEqual(Player.none, grid[position.row][position.column].player)
     }
 
     func testPlayerTurnChangesAfterPlayMove() {

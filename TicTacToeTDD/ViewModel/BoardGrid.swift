@@ -8,13 +8,13 @@
 import Foundation
 
 
-class BoardGrid {
+class BoardGrid: ObservableObject {
 
     let numberOfRows: Int = 3
     lazy var numberOfColumns: Int = {
         return numberOfRows
     }()
-    lazy var grid: [[Move]] = []
+    @Published var grid: [[Move]] = []
 
     init() {
         populateGrid()

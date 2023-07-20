@@ -7,10 +7,14 @@
 
 import Foundation
 
-class Game {
+final class Game: ObservableObject {
 
-    var boardGrid: BoardGrid
+    @Published private var boardGrid: BoardGrid
+    lazy var grid: [[Move]] = {
+        return boardGrid.grid
+    }()
     private var playerTurn: Turn
+
     var currentPlayer: Player {
         return playerTurn.getCurrentPlayer
     }
@@ -19,10 +23,11 @@ class Game {
         return gameState
     }
 
-    init(boardGrid: BoardGrid) {
+    init() {
         self.boardGrid = BoardGrid()
         self.playerTurn = Turn()
         self.gameState = .idle
+        self.grid = boardGrid.grid
     }
 
     func startGame() {

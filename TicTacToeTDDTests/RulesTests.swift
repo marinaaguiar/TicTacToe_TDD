@@ -24,7 +24,7 @@ final class RulesTests: XCTestCase {
         super.tearDown()
     }
 
-    func testBoardGridIsFilled() {
+    func testApplyRulesToCheckIfBoardGridIsFilled() {
         for row in 0..<boardGrid.numberOfRows {
             for col in 0..<boardGrid.numberOfColumns {
                 boardGrid.updateCellOnGrid(
